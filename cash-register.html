@@ -82,47 +82,55 @@
 
         <main class="d-flex pos-main">
             <div class="pos-sidebar bg-light p-4 border-right">
+
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Bread</th>
+                            <td class="text-right">3.00</td>
+                            <td>
+                                <input type="number" style="max-width: 40px;" min="1" value="1">
+                            </td>
+                            <td class="text-right">3.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Honey</th>
+                            <td class="text-right">3.00</td>
+                            <td>
+                                <input type="number" style="max-width: 40px;" min="1" value="1">
+                            </td>
+                            <td class="text-right">3.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shoes</th>
+                            <td class="text-right">40.00</td>
+                            <td>
+                                <input type="number" style="max-width: 40px;" min="1" value="2">
+                            </td>
+                            <td class="text-right">80.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="clearfix p-2">
+                    <div class="float-left">
+                        <h5>Total</h5>
+                    </div>
+                    <div class="float-right">
+                        <h5>$86.00</h5>
+                    </div>
+                </div>
                 <a href="#" class="btn btn-block btn-dark">
                     Checkout
                 </a>
-                <table>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Bread</th>
-                                <td>3.00</td>
-                                <td>
-                                    <input type="number" style="max-width: 40px;" min="1" value="1">
-                                </td>
-                                <td>3.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Honey</th>
-                                <td>3.00</td>
-                                <td>
-                                    <input type="number" style="max-width: 40px;" min="1" value="1">
-                                </td>
-                                <td>3.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Shoes</th>
-                                <td>40.00</td>
-                                <td>
-                                    <input type="number" style="max-width: 40px;" min="1" value="2">
-                                </td>
-                                <td>80.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </table>
                 <a href="#" class="btn btn-block btn-danger">
                     Cancel Transaction
                 </a>
