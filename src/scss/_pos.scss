@@ -1,0 +1,9 @@
+$pos-sidebar: 400px;
+
+.pos-sidebar {
+    width: $pos-sidebar;
+}
+
+.pos-items-container {
+    width: calc(100% - #{$pos-sidebar});
+}
