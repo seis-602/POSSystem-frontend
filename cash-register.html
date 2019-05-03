@@ -17,7 +17,7 @@
 
 <body>
 
-    <div id="app">
+    <div id="app" class="app-container">
         <nav class="pos-navbar navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand mr-0 mr-md-3" href="/" aria-label="Bootstrap">
                 <svg class="d-block" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg"
@@ -35,9 +35,9 @@
             <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler collapsed">
-                    <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </button>
-            
+
             <div id="navbarSupportedContent" class="navbar-collapse collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -81,22 +81,64 @@
         </nav>
 
         <main class="d-flex pos-main">
-            <div class="pos-sidebar bg-light p-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum aliquid sunt, natus esse est saepe tenetur enim fugit quam laborum deserunt exercitationem quae laboriosam maxime sint repellat asperiores quasi!
+            <div class="pos-sidebar bg-light p-4 border-right">
+                <a href="#" class="btn btn-block btn-dark">
+                    Checkout
+                </a>
+                <table>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Bread</th>
+                                <td>3.00</td>
+                                <td>
+                                    <input type="number" style="max-width: 40px;" min="1" value="1">
+                                </td>
+                                <td>3.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Honey</th>
+                                <td>3.00</td>
+                                <td>
+                                    <input type="number" style="max-width: 40px;" min="1" value="1">
+                                </td>
+                                <td>3.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Shoes</th>
+                                <td>40.00</td>
+                                <td>
+                                    <input type="number" style="max-width: 40px;" min="1" value="2">
+                                </td>
+                                <td>80.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table>
+                <a href="#" class="btn btn-block btn-danger">
+                    Cancel Transaction
+                </a>
             </div>
             <div class="pos-items-container p-4">
                 <div class="container-fluid">
                     <div class="form-label-group">
-                        <input type="text" id="inputSearch" class="form-control"
-                            placeholder="Search" required>
+                        <input type="text" id="inputSearch" class="form-control" placeholder="Search" required>
                         <label for="inputSearch">Search</label>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-4 shadow-sm">
                                 <div class="card-body">
                                     <img class="w-100 rounded mb-4" src="http://via.placeholder.com/640x360" alt="">
-                                    <h4 class="mb-0">Bread</h4>
+                                    <h5 class="mb-0">Bread</h5>
                                     <p class="small text-muted mb-1">Food</p>
                                     <div class="clearfix mb-3">
                                         <div class="float-left">
@@ -112,11 +154,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-4 shadow-sm">
                                 <div class="card-body">
                                     <img class="w-100 rounded mb-4" src="http://via.placeholder.com/640x360" alt="">
-                                    <h4 class="mb-0"><strike class="text-muted">Honey</strike></h4>
+                                    <h5 class="mb-0"><strike class="text-muted">Honey</strike></h5>
                                     <p class="small text-muted mb-1">Food</p>
                                     <div class="clearfix mb-3">
                                         <div class="float-left">

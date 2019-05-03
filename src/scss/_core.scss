@@ -1,5 +1,9 @@
 $navbar-height: 4rem;
 
+.app-container {
+    min-width: 768px;
+}
+
 .pos-navbar {
     min-height: $navbar-height;
     background-color: #563d7c;
